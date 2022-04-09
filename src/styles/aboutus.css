@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+}
+
+
+.aboutusHeader{
+    /* position: relative;
+    top: 50px; */
+    height: 800px;
+    background-color: #a4a4a4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading{
+    padding: .5rem;
+    font-size: 5rem;
+    color: white;
+    margin-top: 3rem;
+    font-family: brandon;
+
+}
+
+.centering{
+
+    margin-top: 2rem;
+    background-color: rgba(0, 0, 0, 0.22);
+    padding: 3.6rem;
+    width: 1000px;
+
+}
+.centering .whatweare{
+    font-family: brandon;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    .centering{
+        width: 85vw;
+    }
+    .heading{
+        padding: .5rem;
+        font-size: 3.8rem;
+        color: white;
+        margin-top: 2rem;
+        text-align: center;
+        text-shadow: 4px 4px 3px black;
+    }
+    .centering .whatweare{
+        font-size: 1.35rem;
+    }
+}

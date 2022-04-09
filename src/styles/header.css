@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+
+}
+body{
+    overflow-x: hidden;
+}
+:root{
+    --darkred: #911a20;
+    --lightred: #368637;
+}
+
+
+.Header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    /* top: 70px; */
+    height: 95vh;
+    width: 100vw;
+    background-attachment: fixed;
+    font-family: "Cera Pro";
+    background-image: url('../imgs/badshai.jpg');
+    background-size: 1920px;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Header:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.79);
+}
+.Header > *{
+    z-index: 1;
+}
+.Header div{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    bottom: 18px;
+    color: white;
+    margin-left: 9rem;
+    margin-left: 380px;
+
+
+
+
+}
+.Header div h1{
+
+    font-size: 6rem;
+
+    /* font-size: 8vw; */
+
+    font-family: brandon;
+
+    /* width: 325px; */
+}
+
+
+.Header div h1 span{
+    color: var(--lightred);
+
+
+}
+
+
+
+.Header div p{
+    width: 760px;
+    font-family: "Cera Pro";
+    margin-top: 9px;
+    margin-left: 263px;
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 800px) {
+    section.Header div h1{
+        font-size: 5rem;
+
+
+    }
+    section.Header div h1 span{
+        letter-spacing: .25rem;
+    }
+    section.Header div{
+
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+
+    }
+    section.Header div p{
+        font-size: 1.2rem;
+        width: 90%;
+        margin-left: 2px;
+    }
+    section.Header{
+        background-attachment: unset;
+    }
+
+}
